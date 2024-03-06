@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "bookbank-416214",
+  "private_key_id": "3064c0710c75ab69a308d2bdfd626b9351edf2dd",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC06hS3qEIZLYm1\nF/UX5HPYVzLz6eenpvzaQcnE3n5lxiXDnRgviVTzMnFxliGC9HQl9kCoIVffnz08\nAXDm/fLuwnEGcG2MjLU3mR5fcf1W3/3ElwlHmLAE+xnigcRboQyC7iGV5+jvmYWI\nrBHfWDT98hE9fx0HMLURqGfCRgEGGnxXRMISDhXyA3SrYnzDTPprBTvkK5tjiLc9\nZP+O1YiBqbfOfJ1ont3wnFv1+GfpuFJS4vAZQnRqjJGhEMT4tmQVWs2IaBfLffFl\noY4zuXJkML4Ous3aCqc+fP7fmEJMzpmU5Q1yf0JDiz7AqffkGOFSJlQHh+bmuKFh\n8GI3mYa5AgMBAAECggEAKK25mtIqip7CqAWLBqRHqA1zV4TwobHaiPjh9XJR2XCE\nbUeVeJrYjxZ4i6HGRzvQIfkM8MEOkSmtCyEH0eioByeRYnFFMKUy2h2DxtJKtI4I\n8XtEiuS6L2SGnXewPyonNgl1Y8+RgM50SBbord+XisIzPjCmxkcdb6r+KaCz+jr4\nTnopJZLyiW1ySMHf3osL3X0KuZuIiCprxzvUd5oBWbKpgYQkwQSW19E2/hpjvqtY\n/5X1HtBcMRKhac+pICrHujLGCynID1/BNbaZ1cACQwytsz+YlumOSSwXreq7OgX0\nin6z/RUn+4+aZAp+pXHeM4Mbta9i9Od4IX2WRNndAQKBgQD889YrqmgAbz1r4Wve\nIbMizh9Lz6S0tsoknWJn7PH4vGtyR+ERKrZt5Yy86/Jv1M2FcSKthIs4efZO+i0D\nY+pgjFjOaz1B4mJoCOg7HcaYwtMjbNU35pl5Z+qoXKFiEraP3k9KEh/TUEfIoQz5\nQveU2oftoTx64VOtE+DFM4aGbQKBgQC3GA/y+EFScl/R7Fulkq3z0P/sWehta6aZ\ni5ZDWeyUJ0sAhPsOg8qPPKz3cR87MLqUi1LwxzWDoNVQVW3ZxEKQpthMbBxTY402\nKFT9QodrOkLoLyWWq/gtPB/N3CWxK1dv/oUcrKcPCsIbchUGsPb8Ull60NaHduX6\nitWpwnlB/QKBgQC5ejZFyGsAPpEkJKPKup023TtXhIc6N3obxQeeOsDm6YpDvu8K\nfm5MQPCkqsIXPEwDGAUchL7tB4kTOiB9husaJm8L1NiTEeOkczuN9XRlGR5msGvb\n1Iwe2JLZJyry1dPlxFYRcx7A/PHV7DmuIGuYS3E2Tm8hj02i8Jt1HiX7NQKBgBTt\nkC0iiTzmS+OP063qRS3gTtByOmn/awyT8voB1lPc5erKSHQRRl72/YJPENXQLRN7\nlWBmNMy13owPJ75De6RTHdgmZ1p0v5hYJdbI+vebsjgd43sEbxqki7IZHsnQfW8U\ntZxgc7v5a9R9Rr/8DE8tDoNGSa80PPdVVTTRQND1AoGBAI0Gsz5IcgTIqzEXxdrv\niB/H55XgLgN2n3NAuHFJRiweam4fl4mINpkpy8DOHuGMM8Iz1GBXjpAkk7OPbY9n\n6cobrSg3b3kyOsh1m/oYPcFvguvB8vzQy9rXLTzIlCIfiUe7S0lWU7m1+e01XebJ\nW81ysFwQtHH5Gfefs47YRdTH\n-----END PRIVATE KEY-----\n",
+  "client_email": "bookbank@bookbank-416214.iam.gserviceaccount.com",
+  "client_id": "102641540392836294829",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bookbank%40bookbank-416214.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
