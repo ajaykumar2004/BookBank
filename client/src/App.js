@@ -19,7 +19,7 @@ function App() {
     e.preventDefault();
     console.log('Book Name:', bookName);
     try {
-      const response = await fetch('http://localhost:3001/book' , {
+      const response = await fetch('https://book-bank-one.vercel.app/book' , {
           method  : 'POST' ,
           headers : {
             'Content-Type':' application/json ',
@@ -56,7 +56,7 @@ function App() {
       formData.append('bookname', userbookname);
       formData.append('book', userbook);
       console.log(formData);
-      const response = await fetch('http://localhost:3001/publish', {
+      const response = await fetch('https://book-bank-one.vercel.app/publish', {
         method: 'POST',
         body: formData,
       });
