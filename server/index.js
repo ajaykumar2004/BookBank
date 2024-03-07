@@ -4,6 +4,7 @@ const fs = require('fs').promises;
 const multer = require('multer');
 const app = express();
 const port = 3001;
+require('dotenv').config();
 const cors = require('cors');
 const credentials = require('./bookbank-416214-3064c0710c75.json');
 const folderId = process.env.GOOGLE_DRIVE_FOLDER_ID;
