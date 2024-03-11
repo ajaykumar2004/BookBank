@@ -1,2 +1,2 @@
 # BookBank
-Kindle Clone
+Store and publish your books 
