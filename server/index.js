@@ -3,15 +3,57 @@ const { google } = require('googleapis');
 const fs = require('fs').promises;
 const multer = require('multer');
 const app = express();
-const port = 3001;
 require('dotenv').config();
+const port = 3001;
 const cors = require('cors');
 const credentials = require('./bookbank-416214-3064c0710c75.json');
+const bodyParser = require('body-parser');
 const folderId = process.env.GOOGLE_DRIVE_FOLDER_ID;
 const dictionaryFilePath = './booknames.json';
 
+const User = require('./models/User');
+const mongoose = require('mongoose');
+require('./db');
 app.use(express.json());
 app.use(cors());
+
+/// Login
+app.post("/user",async (req,res)=>{
+  const { user , password } = req.body;
+  const existingUser = await User.findOne({username : user, password : password});
+  if(existingUser){
+    return res.status(400).json({success : true , message : "Good to go"});
+  }
+  return res.status(400).json({success : false, message : "User not found"});
+});
+app.post("/admin",(req,res)=>{
+  const { user , password } = req.body;
+  console.log(user,password); 
+});
+app.post("/newuser", async (req,res)=>{
+  console.log("into new user");
+  const {username, email , password } = req.body;
+  const existingUser = await User.findOne({email : email});
+  if(existingUser){
+    console.log("");
+    return res.status(400).json({success : false , message : "User already exits"});
+  }
+  const existingUserName= await User.findOne({username : username});
+  if(existingUserName){
+    console.log("");
+    return res.status(400).json({success : false , message : "UserName taken"});
+  }
+  const newUser = new User({username,email,password});
+  console.log("into new user");
+  newUser.save()
+  .then(result => {
+    return res.status(400).json({success : true , message : "Welcome to BookBank . Login to continue"});
+    console.log("Done inserting");
+  })
+  .catch(err=>{
+    console.log(err);
+  })
+});
 
 
 let booknames = {};
@@ -55,7 +97,14 @@ const upload = multer({ storage: storage });
 app.get('/', (req, res) => {
   res.send('Welcome to the server side');
 });
+app.get('/book',(req,res)=>{
 
+  res.send("Welcom to book side");
+});
+app.get('/publish',(req,res)=>{
+
+  res.send("Welcome to punlish side");
+});
 app.post('/book', async (req, res) => {
   const bookname = req.body.name;
 
@@ -120,3 +169,5 @@ app.post('/publish', upload.single('book'), async (req, res) => {
 app.listen(port, () => {
   console.log(`Server running at port 3001: http://localhost:${port}`);
 });
+
+
